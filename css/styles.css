@@ -15,7 +15,7 @@
   --portfolio-button-bg-color: #f5f4fa;
   --header-border-color: #ececec;
   --signature-works-border-color: #eeeeee;
-  --social-link-icon-color: #afb1b8;
+  --icon-color: #afb1b8;
 }
 
 html {
@@ -396,7 +396,7 @@ button {
 }
 
 .team .icon {
-  fill: var(--social-link-icon-color);
+  fill: var(--icon-color);
 }
 
 .team .social-link .link:hover,
@@ -406,10 +406,44 @@ button {
 }
 
 .team .icon {
-  fill: var(--social-link-icon-color);
+  fill: var(--icon-color);
 }
 
 .team .icon {
+  fill: currentColor;
+}
+
+.clients {
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-blue-color);
+}
+
+.clients .icon {
+  fill: var(--icon-color);
+}
+
+.clients .icon {
   fill: currentColor;
 }
 
