@@ -2,6 +2,7 @@
   --primary-bg-color: #ffffff;
   --footer-bg-color: #2f303a;
   --footer-logo-accent-color: #ffffff;
+  --footer-social-link-color: rgba(255, 255, 255, 0.1);
   --advantages-icon-bg-color: #f5f4fa;
   --section-team-bg-color: #f5f4fa;
   --hero-bg-color: #2f303a;
@@ -198,6 +199,15 @@ button {
   background-color: var(--footer-bg-color);
 }
 
+.page-footer .container {
+  display: flex;
+}
+
+.footer-adress-container {
+  width: 231px;
+  margin-right: 70px;
+}
+
 .page-footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -223,6 +233,34 @@ button {
 
 .link.googlmaps {
   color: var(--footer-logo-accent-color);
+}
+
+.footer-join-container .title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: var(--footer-logo-accent-color);
+}
+.footer-join-container .social-link {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-join-container .link {
+  background: var(--footer-social-link-color);
+}
+
+.footer-join-container .link:hover,
+.footer-join-container .link:focus {
+  background: var(--accent-blue-color);
+}
+
+.footer-join-container .link .icon {
+  fill: var(--footer-logo-accent-color);
 }
 
 .hero {
@@ -447,17 +485,17 @@ button {
   fill: currentColor;
 }
 
-.selection.list {
+.portfolio-nav.list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.selection .item:not(:last-child) {
+.portfolio-nav .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-nav {
+.portfolio-nav-button {
   padding: 6px 22px;
   border-radius: 4px;
 
@@ -470,13 +508,13 @@ button {
   letter-spacing: 0.03em;
 }
 
-.portfolio-nav:hover,
-.portfolio-nav:focus {
+.portfolio-nav-button:hover,
+.portfolio-nav-button:focus {
   background: var(--accent-blue-color);
   color: var(--button-active-text-color);
 }
 
-.portfolio-nav.see {
+.portfolio-nav-button.see {
   background: var(--accent-blue-color);
   color: var(--button-active-text-color);
 }
@@ -489,7 +527,10 @@ button {
 
 .works .item {
   flex-basis: calc((100% - 60px) / 3);
+}
 
+.works .item:hover,
+.works .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
